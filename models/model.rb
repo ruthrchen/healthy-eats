@@ -20,13 +20,25 @@ def get_recipe_id(type, meal, restriction)
             if restriction == "none"
                 return "Savory-Lentil-Mushroom-Burgers-481250"
             elsif restriction == "vegetarian"
-                return "Overnight-Savory-Breakfast-Mushrooms-1364329"
+                return "Rainbow-Cauliflower-Crust-Pizza-1582501"
             elsif restriction == "vegan"
-                return "Vegan-Breakfast-Casserole-1004639"
+                return "Vegan-Taco-Lettuce-Wraps-2077502"
             elsif restriction == "gluten-free"
-                return "Kale-Frittata---A-Healthy-Breakfast-Casserole-579095"
+                return "Paprika-Chicken_-Asparagus_-and-Sun-Dried-Tomatoes-Skillet-1864417"
             elsif restriction == "nut-free"
-                return "Egg-White_-Tomato_-_-Avocado-Breakfast-Sandwich-1122185"
+                return "Turkey-Taco-Lunch-Bowls-_Meal-Prep_-2016045"
+            end
+        elsif meal == "dinner"
+            if restriction == "none"
+                return "Zucchini-Lasagna-2031241"
+            elsif restriction == "vegetarian"
+                return "Easy-Lo-Mein-757872"
+            elsif restriction == "vegan"
+                return "Super-Creamy-Vegan-Stovetop-Mac-_-_Cheese_-1009462"
+            elsif restriction == "gluten-free"
+                return "Healthy-Spaghetti-Squash-Alfredo-2143998"
+            elsif restriction == "nut-free"
+                return "Hummus-Crusted-Chicken-2061607"
             end
         end
         
@@ -50,7 +62,6 @@ def get_recipe_id(type, meal, restriction)
                 return "Easy-Healthy-Breakfast-1284967"
             end
         
-        
         elsif meal == "lunch"
             if restriction == "none"
                 return "Carrot-_-Sweet-Corn-Fritters-1567857"
@@ -62,6 +73,19 @@ def get_recipe_id(type, meal, restriction)
                 return "The-BEST-Chicken-Salad-Recipe-Ever_-_-Gluten-Free-2113078"
             elsif restriction == "nut-free"
                 return "Fruit-Muesli-Yoghurt-Parfait-2143449"
+            end
+        
+        elsif meal == "dinner"
+            if restriction == "none"
+                return "Pad-Thai-1010155"
+            elsif restriction == "vegetarian"
+                return "Smoky-Grilled-Tofu-With-Hoisin-Sauce-1683291"
+            elsif restriction == "vegan"
+                return "Cold-Spicy-Peanut-Sesame-Noodles-630733"
+            elsif restriction == "gluten-free"
+                return "Honey-Garlic-Salmon-1915539"
+            elsif restriction == "nut-free"
+                return "Pineapple-Un-Fried-Rice-1245523"
             end
         elsif meal == "dessert"
             if restriction == "none"
@@ -81,12 +105,7 @@ def get_recipe_id(type, meal, restriction)
     elsif type == "spicy"
         if meal == "breakfast"
             if restriction == "none"
-                # return "Cinnamon-Apple-Overnight-Oats-210519"
-                # "Greek-Yogurt-Breakfast-Bark-1568935"
-                # "3-Ingredient-Banana-Pancakes-1561724"
-                # "Potato-Pancakes-with-Wild-Blueberry-Apple-Chutney-and-Tofu-Scramble-2091543"
-                # "Gluten-Free-Crepes-1065733"
-                # "Easy-Healthy-Breakfast-1284967"
+                return "Breakfast-Quesadilla-1623270"
             elsif restriction == "vegetarian"
                 return "The-28-Day-Shrink-Your-Stomach-Challenge-Breakfast-Spinach-Tacos-1690736"
             elsif restriction == "vegan"
@@ -96,6 +115,30 @@ def get_recipe_id(type, meal, restriction)
             elsif restriction == "nut-free"
                 return "Sweet-and-Spicy-Breakfast-Skillet-1320698"
             end 
+        elsif meal == "lunch"
+            if restriction == "none"
+                return "6-Ingredient-Mexican-Style-Quinoa-Salad-1812760"
+            elsif restriction == "vegetarian"
+                return "Slow-Cooker-Vegetarian-Lentil-Chili-2090541"
+            elsif restriction == "vegan"
+                return "Two-Minute-Thai-Noodles-1713804"
+            elsif restriction == "gluten-free"
+                return "Low-Carb-Buffalo-Chicken-Salad-Stuffed-Avocado-1683238"
+            elsif restriction == "nut-free"
+                return "Slow-Cooker-Vegetarian-Lentil-Chili-2090541"
+            end
+        elsif meal == "dinner"
+            if restriction == "none"
+                return "Cilantro-Lime-Shrimp-2108066"
+            elsif restriction == "vegetarian"
+                return "Spicy-Ethiopian-Lentil-Stew-191516"
+            elsif restriction == "vegan"
+                return "Cauliflower-and-Chickpea-Curry-1390472"
+            elsif restriction == "gluten-free"
+                return "Healthy-Chicken-Taco-Bowl-_Whole30__-2037710"
+            elsif restriction == "nut-free"
+                return "Easy-Chicken-Enchilada-Skillet-Dinner-2077476"
+            end
         end
     end
 end 

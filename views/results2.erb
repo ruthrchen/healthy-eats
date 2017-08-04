@@ -1,36 +1,64 @@
 <html>
-<head>
-    <link rel="stylesheet" href="css/resultcss.css" />
-    <script type="text/javascript" src="script.js"></script>
-</head>
-<body>
- <div class="container">
-    <div class="row">    
-        <div class="col-md-6 col-md-offset-3">
-            <div class="card">
-                <div class="card-image">
-                    <img class="img-responsive" src="http://lorempixel.com/555/300/sports">
-                    
-                </div><!-- card image -->
-                
-                <div class="card-content">
-                    <span class="card-title">Material Cards</span>                    
-                    <button type="button" id="show" class="btn btn-custom pull-right" aria-label="Left Align">
-                        <i class="fa fa-ellipsis-v"></i>
-                    </button>
-                </div><!-- card content -->
-                <div class="card-action">
-                    <a href="#" target="new_blank">Link</a>
-                    <a href="#" target="new_blank">Link</a>                    
-                  
-                </div><!-- card actions -->
-                <div class="card-reveal">
-                    <span class="card-title">Card Title</span> <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                </div><!-- card reveal -->
-            </div>
-        </div>
-    </div>
-</div>
-  </body>
- </html>
+	<head>
+		<title>Healthy Eats</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body class="index">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header" class="alt">
+					<h1 id="logo"><a href="index.html">Healthy Eats <span>by KWK Girls</span></a></h1>
+					<nav id="nav">
+						<ul>
+							<li class="current"><a href="index.html">Welcome</a></li>
+							<li class="submenu">
+								<a href="#">More</a>
+								<ul>
+									<li><a href="insertabout">About</a></li>
+									<li><a href="inserthealth_facts">Health Facts</a></li>
+									<li><a href="insert_formhere">Find Healthy Options</a></li>
+
+
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Banner -->
+				<section id="banner">
+
+					<!--
+						".inner" is set up as an inline-block so it automatically expands
+						in both directions to fit whatever's inside it. This means it won't
+						automatically wrap lines, so be sure to use line breaks where
+						appropriate (<br />).
+					-->
+					<div class="inner">
+
+						<header>
+							<h2>Healthy Eats</h2>
+						</header>
+						<p><h2><%=@recipe_name%></h2>
+            <img src = <%=@recipe_image%>
+            <ul>
+              <% @recipe_ingredients.each do |ing| %>
+                <li><%= ing %></li>
+            <% end %>
+            </ul>
+          <h3><%=@recipe_attribution%></h3>
+						<br />
+						<footer>
+							<ul class="buttons vertical">
+								<li><a href="#main" class="button fit scrolly">Find a Recipe</a></li>
+							</ul>
+						</footer>
+					</div>
+
+				</section>
