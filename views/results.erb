@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>results</title>
+  </head>
+  <body>
+    <h2><%=@recipe_name%></h2>
+    <img src = <%=@recipe_image%>
+    <ul>
+      <% @recipe_ingredients.each do |ing| %>
+        <li><%= ing %></li>
+    <% end %> 
+    </ul>
+   
+    
+  <h3><%=@recipe_attribution%></h3>
+    
+   
+   
+   
+  </body>
+</html>
