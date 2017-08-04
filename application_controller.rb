@@ -35,7 +35,7 @@ class MyApp < Sinatra::Base
     @recipe_ingredients = yummly_response_hash['ingredientLines']
     @recipe_nutrition = yummly_response_hash['nutritionEstimates']
     @recipe_attribution = yummly_response_hash['attribution']['html']
-    # @recipe_directions = yummly_response_hash['source'][2]['sourceRecipeUrl']
+    @recipe_directions = yummly_response_hash['source']['sourceRecipeUrl']
     erb :results2
   end
 
